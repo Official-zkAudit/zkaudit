@@ -1,0 +1,28 @@
+# Leo build outputs
+/build/
+/outputs/
+
+# Environment files with sensitive data
+.env
+.env.local
+.env.*.local
+
+ACTION_PLAN.md
+run.sh
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Node (if we add frontend later)
+node_modules/
+dist/
