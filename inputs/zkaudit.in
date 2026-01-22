@@ -1,0 +1,74 @@
+// Example inputs for the zkaudit.aleo program
+
+// Register auditor example
+[register_auditor]
+public auditor_commitment: field = 12345678901234567890field;
+
+// Issue certificate example
+[issue_certificate]
+recipient: address = aleo1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq3ljyzc;
+certificate_id: field = 11111111111111111111field;
+program_hash: field = 99999999999999999999field;
+standard_level: u8 = 2u8;
+issued_at: u64 = 1700000000u64;
+expires_at: u64 = 1731536000u64;
+auditor_commitment: field = 12345678901234567890field;
+
+// Verify certificate example
+[verify_certificate]
+certificate: Certificate = Certificate {
+    owner: aleo1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq3ljyzc,
+    certificate_id: 11111111111111111111field,
+    program_hash: 99999999999999999999field,
+    standard_level: 2u8,
+    issued_at: 1700000000u64,
+    expires_at: 1731536000u64,
+    auditor_commitment: 12345678901234567890field
+};
+current_time: u64 = 1705000000u64;
+minimum_standard: u8 = 1u8;
+
+// Revoke certificate example
+[revoke_certificate]
+certificate: Certificate = Certificate {
+    owner: aleo1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq3ljyzc,
+    certificate_id: 11111111111111111111field,
+    program_hash: 99999999999999999999field,
+    standard_level: 2u8,
+    issued_at: 1700000000u64,
+    expires_at: 1731536000u64,
+    auditor_commitment: 12345678901234567890field
+};
+revoked_at: u64 = 1710000000u64;
+reason_hash: field = 55555555555555555555field;
+auditor_commitment: field = 12345678901234567890field;
+
+// Transfer certificate example
+[transfer_certificate]
+certificate: Certificate = Certificate {
+    owner: aleo1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq3ljyzc,
+    certificate_id: 11111111111111111111field,
+    program_hash: 99999999999999999999field,
+    standard_level: 2u8,
+    issued_at: 1700000000u64,
+    expires_at: 1731536000u64,
+    auditor_commitment: 12345678901234567890field
+};
+new_owner: address = aleo1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq3ljyzc;
+
+// Verify program hash example
+[verify_program_hash]
+certificate: Certificate = Certificate {
+    owner: aleo1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq3ljyzc,
+    certificate_id: 11111111111111111111field,
+    program_hash: 99999999999999999999field,
+    standard_level: 2u8,
+    issued_at: 1700000000u64,
+    expires_at: 1731536000u64,
+    auditor_commitment: 12345678901234567890field
+};
+expected_program_hash: field = 99999999999999999999field;
+
+// Get auditor reputation example
+[get_auditor_reputation]
+public auditor_commitment: field = 12345678901234567890field;

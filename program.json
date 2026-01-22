@@ -1,0 +1,6 @@
+{
+  "program": "zkaudit.aleo",
+  "version": "0.1.0",
+  "description": "Privacy-preserving certification protocol for Aleo programs",
+  "license": "MIT"
+}

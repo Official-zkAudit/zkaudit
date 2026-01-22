@@ -1,0 +1,27 @@
+# Build artifacts
+/build/
+*.avm
+*.prover
+*.verifier
+
+# Leo outputs
+outputs/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Temporary files
+/tmp/
+*.tmp
+*.log
+
+# Dependencies (if any)
+node_modules/
